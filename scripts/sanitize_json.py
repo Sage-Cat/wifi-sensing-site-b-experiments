@@ -81,7 +81,8 @@ def write_output(path: Path, payload: str) -> None:
             with gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as zipped:
                 zipped.write(payload.encode("utf-8"))
     else:
-        path.write_text(payload, encoding="utf-8", newline="\n")
+        with path.open("x", encoding="utf-8", newline="\n") as handle:
+            handle.write(payload)
 
 
 def parse_records(text: str, fmt: str) -> Any:

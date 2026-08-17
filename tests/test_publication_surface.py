@@ -86,6 +86,19 @@ class PublicationSurfaceTests(unittest.TestCase):
             with redirect_stderr(io.StringIO()):
                 self.assertEqual(sanitize_json.main([str(source), str(destination)]), 1)
 
+    def test_sanitizer_refuses_dangling_output_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "source.json"
+            target = root / "outside.json"
+            destination = root / "public.json"
+            source.write_text('{"safe": "value"}', encoding="utf-8")
+            destination.symlink_to(target)
+
+            with redirect_stderr(io.StringIO()):
+                self.assertEqual(sanitize_json.main([str(source), str(destination)]), 1)
+            self.assertFalse(target.exists())
+
     def test_manifest_bundle_mismatch_fails(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             data = [dataset_entry()]
