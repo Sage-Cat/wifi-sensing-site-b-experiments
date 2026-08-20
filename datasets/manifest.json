@@ -1,8 +1,66 @@
 {
   "schema_version": 1,
   "repository": "multi-story-building-public-experiments",
-  "series": "MSB",
-  "generated_at": null,
-  "datasets": [],
-  "excluded_candidates": []
+  "series": "MULTI-STUDY",
+  "generated_at": "2026-08-20T14:38:03Z",
+  "datasets": [
+    {
+      "id": "ugrr01-pilot-action-table",
+      "path": "datasets/public/ugrr01-pilot-action-table",
+      "program_id": "UGRR01",
+      "status": "published-not-claim-grade",
+      "source_record_id": "SRC-38F23F195052",
+      "included_surfaces": [
+        "README.md",
+        "analysis.md",
+        "data/outcomes.csv",
+        "data/summary.json",
+        "deployment.md",
+        "metadata.json"
+      ],
+      "excluded_surfaces": [
+        "absolute timestamps and source identifiers",
+        "exact site topology and operator schedule",
+        "hardware and network identifiers",
+        "incomplete or interrupted captures",
+        "per-frame sensing and per-packet service records"
+      ],
+      "sanitization_summary": [
+        "retained one complete aggregate action table",
+        "replaced source linkage with one opaque record identifier",
+        "removed all spatial temporal device network and record-level fields"
+      ],
+      "claim_boundary": "One engineering pilot table under unlabelled general activity; descriptive aggregate only. It is not model-training, efficacy, uncertainty-calibration, human-activity, occupancy, or multi-site evidence."
+    },
+    {
+      "id": "ugrr02-labelled-channel-pilot",
+      "path": "datasets/public/ugrr02-labelled-channel-pilot",
+      "program_id": "UGRR02",
+      "status": "published-not-claim-grade",
+      "source_record_id": "SRC-E77681E00ECD",
+      "included_surfaces": [
+        "README.md",
+        "analysis.md",
+        "data/segment-summary.json",
+        "deployment.md",
+        "metadata.json"
+      ],
+      "excluded_surfaces": [
+        "absolute timestamps and source identifiers",
+        "exact site topology and operator schedule",
+        "hardware and network identifiers",
+        "per-frame sensing and per-packet service records"
+      ],
+      "sanitization_summary": [
+        "retained one labelled aggregate segment",
+        "removed phase timestamps raw signals and source linkage",
+        "retained bounded QC and alignment accounting"
+      ],
+      "claim_boundary": "One controlled labelled absolute pilot window; descriptive aggregate only. It is not a paired action effect, canonical table, model-training, efficacy, uncertainty-calibration, occupancy, or generalization evidence."
+    }
+  ],
+  "excluded_candidates": [
+    "incomplete labelled pilot captures",
+    "active or unfinished capture data"
+  ]
 }

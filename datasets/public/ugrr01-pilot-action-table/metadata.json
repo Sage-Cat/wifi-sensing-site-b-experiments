@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "dataset_id": "ugrr01-pilot-action-table",
+  "series": "UGRR",
+  "program_id": "UGRR01",
+  "description": "Aggregate outcomes and shared-pre deltas from one complete UGRR engineering pilot action table.",
+  "evidence_status": "published-not-claim-grade",
+  "abstract_site": "site-S01",
+  "abstract_levels": [
+    "level-L01"
+  ],
+  "abstract_zones": [
+    "zone-Z01",
+    "zone-Z02",
+    "zone-Z03",
+    "zone-Z04",
+    "zone-Z05"
+  ],
+  "time_basis": "relative",
+  "human_context": "unlabelled-environment",
+  "privacy_review": "Aggregate-only review passed; direct identifiers, absolute times, spatial detail, equipment and network labels, logs, and record-level signals were excluded.",
+  "claim_boundary": "One engineering pilot table under unlabelled general activity; descriptive aggregate only. It is not model-training, efficacy, uncertainty-calibration, human-activity, occupancy, or multi-site evidence."
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for the MSB public publication surface."""
+"""Fail-closed validation for the multi-study public publication surface."""
 
 from __future__ import annotations
 
@@ -19,7 +19,12 @@ TEXT_BASENAMES = {".gitignore", ".gitattributes", "SHA256SUMS"}
 BINARY_EXTENSIONS = {".pcap", ".pcapng", ".cap", ".bin", ".raw", ".wav", ".mp3", ".mp4", ".avi", ".mov", ".jpg", ".jpeg", ".png", ".webp", ".tif", ".geojson", ".kml", ".gpx", ".pdf", ".zip", ".tar", ".7z"}
 MAX_FILE_BYTES = 5 * 1024 * 1024
 MAX_TEXT_BYTES = 20 * 1024 * 1024
-PUBLIC_STATUSES = {"published", "published-not-claim-grade", "published-claim-grade"}
+PUBLIC_STATUSES = {
+    "publication-candidate-not-claim-grade",
+    "published",
+    "published-not-claim-grade",
+    "published-claim-grade",
+}
 MANIFEST_ENTRY_KEYS = {
     "id", "path", "program_id", "status", "source_record_id",
     "included_surfaces", "excluded_surfaces", "sanitization_summary",
@@ -173,7 +178,7 @@ def validate_manifest(root: Path, issues: list[str]) -> dict[str, dict[str, Any]
     if set(manifest) != expected:
         issue(issues, manifest_path, "does not have the exact required keys")
         return {}
-    if manifest["schema_version"] != 1 or manifest["repository"] != "multi-story-building-public-experiments" or manifest["series"] != "MSB":
+    if manifest["schema_version"] != 1 or manifest["repository"] != "multi-story-building-public-experiments" or manifest["series"] != "MULTI-STUDY":
         issue(issues, manifest_path, "has an invalid repository identity")
     if manifest["generated_at"] is not None and not isinstance(manifest["generated_at"], str):
         issue(issues, manifest_path, "has invalid generated_at")
@@ -192,7 +197,7 @@ def validate_manifest(root: Path, issues: list[str]) -> dict[str, dict[str, Any]
         if not isinstance(ident, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]*", ident) or bundle_path != expected_path:
             issue(issues, manifest_path, "has a non-canonical dataset allowlist entry")
             continue
-        if not isinstance(entry["program_id"], str) or not re.fullmatch(r"MSB[0-9]{2}", entry["program_id"]):
+        if not isinstance(entry["program_id"], str) or not re.fullmatch(r"(?:MSB|UGRR)[0-9]{2}", entry["program_id"]):
             issue(issues, manifest_path, "has an invalid program identifier")
         if not isinstance(entry["status"], str) or entry["status"] not in PUBLIC_STATUSES:
             issue(issues, manifest_path, "has an invalid publication status")
@@ -246,7 +251,8 @@ def validate_bundle(root: Path, entry: dict[str, Any], issues: list[str]) -> Non
         set(metadata) != METADATA_KEYS
         or metadata.get("schema_version") != 1
         or metadata.get("dataset_id") != name
-        or metadata.get("series") != "MSB"
+        or metadata.get("series") not in {"MSB", "UGRR"}
+        or not str(metadata.get("program_id", "")).startswith(str(metadata.get("series", "")))
         or metadata.get("program_id") != entry["program_id"]
         or metadata.get("evidence_status") != entry["status"]
         or not re.fullmatch(r"site-S[0-9]{2}", str(metadata.get("abstract_site", "")))

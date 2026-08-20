@@ -1,11 +1,11 @@
-# Multi-Story Building Public Experiments
+# Multi-Study Public Experiments
 
-Public scripts, schemas, privacy policies, and future privacy-reviewed dataset
-manifests for the **MSB** research series. Scientific research development is
-maintained outside this public-data repository.
+Public scripts, schemas, privacy policies, and privacy-reviewed aggregate
+datasets for Wi-Fi sensing studies. The repository path retains its historical
+MSB name; each bundle declares its own series.
 
-No datasets are published and this repository makes no empirical claims. It
-deliberately contains no measured or raw data.
+The UGRR bundles contain one descriptive action table and one labelled absolute
+pilot segment. Neither is claim-grade; neither contains raw or record-level data.
 
 Only repository/privacy/dataset documentation, standard-library scripts,
 schemas, and manifest-approved sanitized bundles may be public. See the

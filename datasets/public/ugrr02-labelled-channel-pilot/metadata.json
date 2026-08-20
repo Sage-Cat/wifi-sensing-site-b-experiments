@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "dataset_id": "ugrr02-labelled-channel-pilot",
+  "series": "UGRR",
+  "program_id": "UGRR02",
+  "description": "Aggregate sensing, service, QC, and alignment values from one controlled labelled UGRR pilot window.",
+  "evidence_status": "published-not-claim-grade",
+  "abstract_site": "site-S01",
+  "abstract_levels": [
+    "level-L01"
+  ],
+  "abstract_zones": [
+    "zone-Z01",
+    "zone-Z02",
+    "zone-Z03",
+    "zone-Z04",
+    "zone-Z05"
+  ],
+  "time_basis": "relative",
+  "human_context": "controlled-consented",
+  "privacy_review": "Aggregate-only review passed; timestamps, spatial detail, equipment and network labels, logs, and record-level signals were excluded.",
+  "claim_boundary": "One controlled labelled absolute pilot window; descriptive aggregate only. It is not a paired action effect, canonical table, model-training, efficacy, uncertainty-calibration, occupancy, or generalization evidence."
+}

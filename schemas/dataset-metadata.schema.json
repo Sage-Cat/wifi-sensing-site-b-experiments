@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "MSB public bundle metadata",
+  "title": "Multi-study public bundle metadata",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -21,11 +21,11 @@
   "properties": {
     "schema_version": {"const": 1},
     "dataset_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "series": {"const": "MSB"},
-    "program_id": {"type": "string", "pattern": "^MSB[0-9]{2}$"},
+    "series": {"enum": ["MSB", "UGRR"]},
+    "program_id": {"type": "string", "pattern": "^(MSB|UGRR)[0-9]{2}$"},
     "description": {"type": "string", "minLength": 1},
     "evidence_status": {
-      "enum": ["published", "published-not-claim-grade", "published-claim-grade"]
+      "enum": ["publication-candidate-not-claim-grade", "published", "published-not-claim-grade", "published-claim-grade"]
     },
     "abstract_site": {"type": "string", "pattern": "^site-S[0-9]{2}$"},
     "abstract_levels": {
