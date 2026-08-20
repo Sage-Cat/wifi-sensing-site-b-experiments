@@ -1,5 +1,0 @@
-window_index,action,sensing_score,goodput_mbps,p95_latency_ms,loss_rate,delta_sensing,delta_goodput_mbps,delta_latency_ms,delta_loss_rate,service_slo_pass,nonkeep_sensing_threshold_pass,qc_pass
-0,shared_pre,0.263194444444,4.99781443588,10.1,0.000463347298106,0,0,0,0,true,false,true
-1,switch_to_11,0.232564936436,5.0000622836,6.95,0,-0.0306295080089,0.00224784772111,-3.15,-0.000463347298106,true,false,true
-2,switch_to_6,0.214470256188,4.99979541398,6.68,0,-0.0487241882569,0.00198097809689,-3.42,-0.000463347298106,true,false,true
-3,keep,0.357189143388,4.99770549171,19.6,0.000482653435527,0.0939946989434,-0.000108944174868,9.5,1.93061374211e-05,true,false,true
