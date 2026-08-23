@@ -1,8 +1,7 @@
-# UGRR CSI/RSSI Experimental Dataset
+# Wi-Fi Sensing Site B Experiments
 
-Downloadable record-level Wi-Fi sensing data from two UGRR engineering pilots.
-The repository name is historical: these files are **UGRR data, not evidence
-from a multi-story-building campaign**.
+Downloadable record-level Wi-Fi sensing data from two UGRR engineering pilots
+at anonymized public site `site-b`.
 
 ## Download
 

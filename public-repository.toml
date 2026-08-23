@@ -1,0 +1,7 @@
+schema_version = 1
+repository_alias = "wifi_sensing_site_b_experiments"
+public_site_alias = "site-b"
+sanitization_policy = "default_deny"
+deanonymization_authorized = false
+private_location_identity_in_public_repo = false
+mapping_status = "active"
