@@ -1,0 +1,36 @@
+{
+  "bundle_id": "same-attempt-evidence-admission-2026",
+  "content_kind": "sanitized derived experiment results",
+  "creator": "Sage-Cat",
+  "environment_scope": "same-floor inter-zone WLAN at anonymized site-b; no cross-floor experiment was performed",
+  "files": {
+    "canonical_results": "data/results.json",
+    "comparator_summary": "data/comparator-summary.csv",
+    "fault_reason_families": "data/fault-reason-families.csv",
+    "operational_unit_outcomes": "data/operational-unit-outcomes.csv",
+    "phase_summary": "data/phase-summary.csv",
+    "reason_family_summary": "data/reason-family-summary.csv",
+    "secondary_monitoring_summary": "data/secondary-monitoring-summary.csv"
+  },
+  "license": "CC-BY-4.0",
+  "method_scope": "composed structural-and-baseline completeness plus failure-aware timing admission on the same evidence attempt",
+  "phase_count": 3,
+  "phase_pooling_permitted": false,
+  "privacy": {
+    "contains_absolute_timestamps": false,
+    "contains_direct_device_or_network_identifiers": false,
+    "contains_private_location_identity": false,
+    "contains_private_source_hashes": false,
+    "contains_raw_radio_traces": false,
+    "deanonymization_authorized": false,
+    "sanitization_policy": "default_deny_allowlisted_projection"
+  },
+  "public_site_alias": "site-b",
+  "release_year": 2026,
+  "repository": "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments",
+  "schema_version": "sage-cat-public-result-bundle/1",
+  "statistical_unit": "one scheduled physical evidence-production unit; deterministic fault copies are repeated transformations within complete parents",
+  "title": "Same-Attempt Evidence Admission: Sanitized Three-Phase Results",
+  "truth_scope": "independent event and manifested-fault truth recorded outside the method verdict",
+  "version": "1.0.0"
+}

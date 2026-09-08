@@ -1,0 +1,160 @@
+{
+  "schema_version": "sagecat-same-attempt-evidence-admission-results/1",
+  "method": {
+    "composition": [
+      "structural and baseline completeness",
+      "failure-aware timing admission"
+    ],
+    "name": "Same-Attempt Evidence Admission",
+    "owner": "Sage-Cat",
+    "semantics": "all mandatory predicates are conjunctive and fail-closed"
+  },
+  "evaluation": {
+    "fault_classes_per_complete_parent": 10,
+    "fault_truth_independent_of_method_verdict": true,
+    "phase_pooling_permitted": false,
+    "statistical_unit": "one scheduled physical evidence-production unit",
+    "transformed_fault_copies_are_independent_physical_trials": false
+  },
+  "phases": {
+    "initial_fixed_denominator": {
+      "classification": "negative diagnostic original-contract phase",
+      "complete_parents": 9,
+      "complete_scientific_failures": 6,
+      "failed_units_replaced": false,
+      "fault_copies": 90,
+      "itt_pass_rate": 0.25,
+      "phase_specific_passes": 3,
+      "positive_validation_claim_supported": false,
+      "scheduled_units": 12,
+      "technical_or_partial_fail_closed": 3,
+      "wilson_95_interval": [
+        0.08894166839405471,
+        0.5323053349335657
+      ]
+    },
+    "single_date_operational": {
+      "classification": "bounded single-date operational confirmation",
+      "complete_parents": 4,
+      "fault_copies": 40,
+      "itt_pass_rate": 1.0,
+      "operational_profile_ms": {
+        "gap": 200.0,
+        "pair_residual": 60.0,
+        "pair_uncertainty": 100.0
+      },
+      "phase_specific_passes": 4,
+      "scheduled_units": 4,
+      "secondary_monitor": {
+        "large_gap_count": 2,
+        "large_gap_rate": 0.0001665278934221482,
+        "large_gap_rate_cap": 0.0002,
+        "maximum_gap_bound_met": false,
+        "maximum_gap_bound_ms": 700.0,
+        "maximum_ingest_gap_ms": 990.653861,
+        "monitored_intervals_in_affected_stream": 12010,
+        "other_source_overlap_count": 0,
+        "scope": "secondary monitoring only"
+      },
+      "wilson_95_interval": [
+        0.5101091635454027,
+        1.0
+      ]
+    },
+    "independent_three_date": {
+      "classification": "negative multidate operational endpoint",
+      "complete_case_pass_fraction": 0.7,
+      "complete_case_wilson_95_interval": [
+        0.39677814746114537,
+        0.8922087325936989
+      ],
+      "complete_parents": 10,
+      "date_strata": {
+        "S1": {
+          "complete": 4,
+          "passes": 4,
+          "scheduled": 4,
+          "scientific_failures": 0,
+          "technical_fail_closed": 0
+        },
+        "S2": {
+          "complete": 2,
+          "passes": 0,
+          "scheduled": 4,
+          "scientific_failures": 2,
+          "technical_fail_closed": 2
+        },
+        "S3": {
+          "complete": 4,
+          "passes": 3,
+          "scheduled": 4,
+          "scientific_failures": 1,
+          "technical_fail_closed": 0
+        }
+      },
+      "endpoint_met": false,
+      "fault_copies": 100,
+      "itt_pass_rate": 0.5833333333333334,
+      "minimum_required_passes": 10,
+      "operational_profile_ms": {
+        "gap": 200.0,
+        "pair_residual": 60.0,
+        "pair_uncertainty": 100.0
+      },
+      "phase_specific_passes": 7,
+      "post_outcome_tuning_performed": false,
+      "scheduled_units": 12,
+      "scientific_failures": 3,
+      "technical_best_case_passes": 9,
+      "technical_fail_closed": 2,
+      "wilson_95_interval": [
+        0.31951131254954973,
+        0.8067396863412435
+      ],
+      "zero_fault_copy_admissions_in_complete_parents": true
+    }
+  },
+  "comparator_accounting": {
+    "boundary": "untransformed labels are nominal comparator truth, not proof of operational admissibility",
+    "complete_parent_counts_by_phase": [
+      9,
+      4,
+      10
+    ],
+    "composed_fault_copy_admissions_by_phase": [
+      0,
+      0,
+      0
+    ],
+    "fault_copy_counts_by_phase": [
+      90,
+      40,
+      100
+    ],
+    "later_operational_evaluator_equivalent_to_nominal_comparator": false,
+    "phase_order": [
+      "initial_fixed_denominator",
+      "single_date_operational",
+      "independent_three_date"
+    ]
+  },
+  "fault_reason_coverage": {
+    "fault_classes": 10,
+    "reason_union_classes": 10,
+    "structural_reason_classes": 6,
+    "timing_reason_classes": 5,
+    "sole_overlap": "counter_discontinuity"
+  },
+  "interpretation": {
+    "supported": "auditable fail-closed fault containment for the evaluated deterministic fault set and complete parents",
+    "trade_off": "zero fault-copy admissions co-occurred with nominal rejection of every untransformed parent in both later phases",
+    "unsupported": [
+      "the predeclared multidate operational reliability endpoint",
+      "population reliability",
+      "sensing or classification accuracy",
+      "occupancy inference",
+      "cross-floor or cross-building generalization",
+      "superiority over methods evaluated in different experiments"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+phase,scope,interval_count,large_gap_threshold_ms,large_gap_count,large_gap_rate,large_gap_rate_cap,maximum_ingest_gap_ms,maximum_gap_bound_ms,maximum_gap_bound_met,other_source_overlap_count
+single_date_operational,secondary_monitoring_only,12010,200,2,0.0001665278934221482,0.0002,990.653861,700,false,0

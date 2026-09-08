@@ -23,6 +23,17 @@ or location details.
 These pilots do not establish causal remediation effects, activity-recognition
 accuracy, generalization, occupancy inference, or calibration.
 
+## Same-attempt evidence admission
+
+Sanitized derived results from three separately frozen evidence-admission
+phases are in
+[`datasets/same-attempt-evidence-admission-2026/`](datasets/same-attempt-evidence-admission-2026/).
+The bundle reports fixed-denominator dispositions, operational timing
+envelopes, nominal comparator accounting, and deterministic fault-reason
+coverage for a composed structural-and-timing admission rule. It preserves the
+negative multidate endpoint and the associated safety--availability trade-off;
+it contains no raw CSI or private site, run, network, or device identifiers.
+
 ## Local--central descriptor verification
 
 Sanitized derived results from a fixed 12-unit verification campaign are in

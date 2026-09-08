@@ -1,0 +1,17 @@
+phase,public_unit_id,date_stratum,complete,disposition,operational_pass,maximum_gap_ms,maximum_pair_uncertainty_ms,maximum_residual_ms,gap_bound_ms,uncertainty_bound_ms,residual_bound_ms
+single_date_operational,single-01,,true,pass,true,54.966354,51.555568,20.095996,200,100,60
+single_date_operational,single-02,,true,pass,true,32.690042,29.249995,22.462412,200,100,60
+single_date_operational,single-03,,true,pass,true,72.640736,48.255108,37.371118,200,100,60
+single_date_operational,single-04,,true,pass,true,62.852591,60.433456,18.609994,200,100,60
+independent_three_date,three-01,S1,true,pass,true,60.062350,57.504084,21.323428,200,100,60
+independent_three_date,three-02,S1,true,pass,true,42.572519,37.607028,20.346512,200,100,60
+independent_three_date,three-03,S1,true,pass,true,112.035003,66.024510,23.896889,200,100,60
+independent_three_date,three-04,S1,true,pass,true,63.853517,62.342134,38.703758,200,100,60
+independent_three_date,three-05,S2,true,timing_envelope_violation,false,1139.049427,585.698635,488.678461,200,100,60
+independent_three_date,three-06,S2,true,timing_envelope_violation,false,2063.173857,1168.589041,603.930790,200,100,60
+independent_three_date,three-07,S2,false,technical_fail_closed_origin,false,,,,200,100,60
+independent_three_date,three-08,S2,false,technical_fail_closed_follow_on,false,,,,200,100,60
+independent_three_date,three-09,S3,true,pass,true,78.085868,67.541288,17.137886,200,100,60
+independent_three_date,three-10,S3,true,pass,true,53.530502,52.118160,21.856723,200,100,60
+independent_three_date,three-11,S3,true,timing_envelope_violation,false,193.744130,139.142691,77.472531,200,100,60
+independent_three_date,three-12,S3,true,pass,true,36.501753,32.129935,27.491289,200,100,60

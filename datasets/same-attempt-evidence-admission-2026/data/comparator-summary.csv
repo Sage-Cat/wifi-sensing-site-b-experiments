@@ -1,0 +1,13 @@
+phase,complete_parents,fault_copies,rule,nominal_untransformed_admissions,nominal_untransformed_rejections,fault_copy_admissions,fault_copy_rejections
+initial_fixed_denominator,9,90,composed_admission,3,6,0,90
+initial_fixed_denominator,9,90,baseline_only,9,0,36,54
+initial_fixed_denominator,9,90,timing_only,3,6,15,75
+initial_fixed_denominator,9,90,pass_through,9,0,90,0
+single_date_operational,4,40,composed_admission,0,4,0,40
+single_date_operational,4,40,baseline_only,4,0,16,24
+single_date_operational,4,40,timing_only,0,4,0,40
+single_date_operational,4,40,pass_through,4,0,40,0
+independent_three_date,10,100,composed_admission,0,10,0,100
+independent_three_date,10,100,baseline_only,10,0,40,60
+independent_three_date,10,100,timing_only,0,10,0,100
+independent_three_date,10,100,pass_through,10,0,100,0

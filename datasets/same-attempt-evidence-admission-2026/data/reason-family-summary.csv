@@ -1,0 +1,4 @@
+phase,complete_parents,fault_copies,structural_reason_copies,timing_reason_copies,union_covered_copies
+initial_fixed_denominator,9,90,54,45,90
+single_date_operational,4,40,24,20,40
+independent_three_date,10,100,60,50,100

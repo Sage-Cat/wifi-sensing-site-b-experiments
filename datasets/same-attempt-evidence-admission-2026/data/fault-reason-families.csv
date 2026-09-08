@@ -1,0 +1,11 @@
+fault_class,structural_reason_present,timing_reason_present
+counter_discontinuity,true,true
+boot_or_reset_boundary,false,true
+arrival_reordering,true,false
+duplicate_record,true,false
+missing_source_or_checkpoint,true,false
+excessive_bracket_gap,false,true
+offset_rate_drift_or_skew,false,true
+stale_record,false,true
+serialization_or_provenance_corruption,true,false
+unmatched_pair_coverage,true,false
