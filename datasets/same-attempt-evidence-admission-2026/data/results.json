@@ -20,7 +20,7 @@
     "initial_fixed_denominator": {
       "classification": "negative diagnostic original-contract phase",
       "complete_parents": 9,
-      "complete_scientific_failures": 6,
+      "complete_nonpassing_units": 6,
       "failed_units_replaced": false,
       "fault_copies": 90,
       "itt_pass_rate": 0.25,
