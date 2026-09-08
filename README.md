@@ -32,4 +32,15 @@ outcomes of nine deterministic fault transformations under five qualification
 rules. It contains no raw CSI, source captures, private identifiers, or
 resource-performance claims.
 
+## Stability-aware configuration maintenance
+
+Sanitized derived results from a live same-floor inter-zone WLAN comparison are
+in
+[`datasets/stability-aware-configuration-maintenance-live-2026/`](datasets/stability-aware-configuration-maintenance-live-2026/).
+The bundle reports six complete matched 30-minute intervals, verified
+configuration changes, local actuator accounting, repeated service outcomes,
+and explicit dispositions for excluded or incomplete follow-up campaigns. It
+contains no raw radio traces, private site or run identifiers, network or device
+identifiers, or exact topology.
+
 All material is licensed under [CC BY 4.0](LICENSE).

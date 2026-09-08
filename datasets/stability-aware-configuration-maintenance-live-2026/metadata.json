@@ -1,0 +1,37 @@
+{
+  "bundle_id": "stability-aware-configuration-maintenance-live-2026",
+  "content_kind": "sanitized derived experiment results",
+  "creator": "Sage-Cat",
+  "environment_scope": "same-floor inter-zone WLAN at anonymized site-b; the broader building has multiple floors, but no cross-floor test was performed",
+  "files": {
+    "campaign_disposition": "data/campaign_disposition.csv",
+    "included_interval_summary": "data/primary_included_intervals.csv",
+    "policy_summary": "data/primary_policy_summary.csv",
+    "repeated_measurement_outcomes": "data/primary_epoch_outcomes.csv"
+  },
+  "license": "CC-BY-4.0",
+  "primary_attempted_intervals": 7,
+  "primary_complete_intervals": 6,
+  "primary_policy_allocation": {
+    "adapted_hysteresis": 2,
+    "immediate_replacement": 2,
+    "stability_aware": 2
+  },
+  "primary_repeated_measurement_records": 36,
+  "privacy": {
+    "contains_absolute_timestamps": false,
+    "contains_direct_device_or_network_identifiers": false,
+    "contains_private_location_identity": false,
+    "contains_private_source_hashes": false,
+    "contains_raw_radio_traces": false,
+    "deanonymization_authorized": false,
+    "sanitization_policy": "default_deny_allowlisted_projection"
+  },
+  "public_site_alias": "site-b",
+  "release_year": 2026,
+  "repository": "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments",
+  "schema_version": "sage-cat-public-result-bundle/1",
+  "statistical_unit": "one complete 30-minute observation interval",
+  "title": "Stability-Aware Configuration Maintenance: Sanitized Live Matched-Interval Results",
+  "version": "1.0.0"
+}

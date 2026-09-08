@@ -1,0 +1,7 @@
+public_interval_id,design_position,attempt_role,replacement_for,policy,completed_measurements,exposure_seconds,verified_configuration_changes,configuration_changes_per_hour,optional_changes,feasibility_forced_changes,fallback_uses,local_actuator_artifact_bytes,quality_margin_passes,throughput_gate_passes,udp_loss_gate_passes,icmp_reply_gate_passes,icmp_latency_gate_passes,composite_service_passes,reference_state_restored
+primary_attempt_01,1,scheduled,,stability_aware,6,1800,0,0.0,0,0,0,0,6,6,6,6,3,3,true
+primary_attempt_02,2,scheduled,,immediate_replacement,6,1800,6,12.0,3,3,0,16263,6,6,6,6,3,3,true
+primary_attempt_04,4,scheduled,,adapted_hysteresis,6,1800,6,12.0,3,3,0,16263,6,6,6,6,2,2,true
+primary_attempt_05,5,scheduled,,immediate_replacement,6,1800,6,12.0,3,3,0,16263,6,6,6,6,2,2,true
+primary_attempt_06,6,scheduled,,stability_aware,6,1800,0,0.0,0,0,0,0,6,6,6,6,3,3,true
+primary_attempt_07,3,separately_frozen_replacement,primary_attempt_03,adapted_hysteresis,6,1800,6,12.0,3,3,0,16263,6,6,6,6,2,2,true

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these results, please cite the dataset below."
+type: dataset
+title: "Stability-Aware Configuration Maintenance: Sanitized Live Matched-Interval Results"
+authors:
+  - name: "Sage-Cat"
+version: "1.0.0"
+date-released: "2026-09-08"
+url: "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments"
+license: CC-BY-4.0
