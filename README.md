@@ -34,6 +34,16 @@ coverage for a composed structural-and-timing admission rule. It preserves the
 negative multidate endpoint and the associated safety--availability trade-off;
 it contains no raw CSI or private site, run, network, or device identifiers.
 
+## Candidate-matched physical admission
+
+Sanitized derived results from the closed 12-block same-floor candidate
+selection campaign are in
+[`datasets/candidate-matched-physical-admission-2026/`](datasets/candidate-matched-physical-admission-2026/).
+The bundle preserves primary, deviation-aware, and incomplete dispositions and
+reports candidate quality, native resource, measured airtime, protected-service,
+and solver outcomes. It contains no raw captures, private identifiers, source
+hashes, absolute times, or exact topology.
+
 ## Local--central descriptor verification
 
 Sanitized derived results from a fixed 12-unit verification campaign are in

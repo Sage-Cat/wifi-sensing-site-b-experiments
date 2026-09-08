@@ -1,0 +1,5 @@
+block_id,algorithm,search_budget,selected_candidate_id,visited_candidate_ids,agreement
+B03,exhaustive_classical_search,4,C1,C1|C2B|C2A|C3,true
+B03,qiss_supportive_classical_search,4,C1,C3|C2B|C2A|C1,true
+B08,exhaustive_classical_search,4,C1,C1|C2B|C2A|C3,true
+B08,qiss_supportive_classical_search,4,C1,C3|C2A|C1|C2B,true
