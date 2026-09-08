@@ -6,6 +6,8 @@
   "files": {
     "canonical_results": "data/results.json",
     "comparator_summary": "data/comparator-summary.csv",
+    "external_rate_context": "data/external-rate-context.csv",
+    "external_timestamp_score": "data/external-timestamp-score.csv",
     "fault_reason_families": "data/fault-reason-families.csv",
     "operational_unit_outcomes": "data/operational-unit-outcomes.csv",
     "phase_summary": "data/phase-summary.csv",
@@ -32,5 +34,5 @@
   "statistical_unit": "one scheduled physical evidence-production unit; deterministic fault copies are repeated transformations within complete parents",
   "title": "Same-Attempt Evidence Admission: Sanitized Three-Phase Results",
   "truth_scope": "independent event and manifested-fault truth recorded outside the method verdict",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

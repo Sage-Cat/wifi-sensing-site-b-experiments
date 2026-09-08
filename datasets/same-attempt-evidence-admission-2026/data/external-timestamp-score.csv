@@ -1,0 +1,11 @@
+phase,public_unit_id,operational_pass,goodcsi_timestamp_variation_score,window_seconds,analysis_status
+independent_three_date,three-01,true,3.820417,45,post_hoc_exploratory
+independent_three_date,three-02,true,3.245599,45,post_hoc_exploratory
+independent_three_date,three-03,true,3.681395,45,post_hoc_exploratory
+independent_three_date,three-04,true,3.443472,45,post_hoc_exploratory
+independent_three_date,three-05,false,1.660149,45,post_hoc_exploratory
+independent_three_date,three-06,false,0.445236,45,post_hoc_exploratory
+independent_three_date,three-09,true,2.556148,45,post_hoc_exploratory
+independent_three_date,three-10,true,2.644187,45,post_hoc_exploratory
+independent_three_date,three-11,false,1.653153,45,post_hoc_exploratory
+independent_three_date,three-12,true,2.579849,45,post_hoc_exploratory

@@ -63,6 +63,42 @@ population reliability, sensing or classification accuracy, occupancy
 inference, cross-floor or cross-building generalization, or superiority over a
 method evaluated in a different experiment.
 
+## Post-hoc external technical comparison
+
+For a real, nonzero external score on the retained data, the timestamp
+variation component of Hu et al.'s GoodCSI framework was applied to the ten
+complete parents in the independent three-date phase. That published score is
+the inverse coefficient of variation of CSI timestamp intervals. Following the
+paper's 45-second sample duration, every required stream was divided into six
+non-overlapping 45-second windows. The median window score summarized each
+stream, and the minimum required-stream median summarized the package. This
+stream-to-package aggregation was selected after the operational outcomes were
+known and is therefore exploratory.
+
+The seven operational-pass parents had a median package score of 3.245599
+(range 2.556148--3.820417); the three operational-fail parents had a median of
+1.653153 (range 0.445236--1.660149). All 21 pass--fail score pairs were ordered
+in the same direction, giving a descriptive rank-concordance area of 1.000000.
+The operational disposition is not independent external truth for this score,
+so this is concordance, not classifier accuracy. No binary threshold was fit,
+and the two technically incomplete scheduled units remain in the primary
+12-unit ITT denominator without imputation.
+
+The same complete parents supplied 30 stream-level rate observations. Their
+median per-source ingest rate was 40.597071 Hz (range 1.610320--41.966175 Hz).
+For numerical scale, GoodCSI evaluated 30-Hz data, while Forbes and Massie
+reported approximately 55 Hz without compression and 95 Hz with 15-frame
+batching in a different dense-deployment system. These are direct same-unit
+numbers, but the hardware, transport, workloads, and estimands differ; they do
+not establish throughput or admission superiority.
+
+The full GoodCSI classifier was not reproduced. Its weighted decision also
+requires empirical thresholds, weights, amplitude evaluation, and
+application-labelled static/motion data that do not form a compatible frozen
+contract for these experiments. Sources:
+[Hu et al.](https://doi.org/10.1145/3636534.3697434) and
+[Forbes and Massie](https://doi.org/10.1109/RTCSA62462.2024.00027).
+
 ## Files
 
 - `metadata.json`: bundle identity, scope, privacy boundary, and file map;
@@ -79,6 +115,10 @@ method evaluated in a different experiment.
   copies;
 - `data/secondary-monitoring-summary.csv`: the bounded single-date
   full-window diagnostic;
+- `data/external-timestamp-score.csv`: exploratory application of the
+  published GoodCSI timestamp-variation score to complete three-date parents;
+- `data/external-rate-context.csv`: same-unit ingest-rate context from the
+  retained streams and two published systems;
 - `CITATION.cff`: citation metadata;
 - `SHA256SUMS`: SHA-256 digest for every other file in this bundle.
 

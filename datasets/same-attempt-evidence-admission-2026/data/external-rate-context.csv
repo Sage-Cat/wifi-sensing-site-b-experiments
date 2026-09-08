@@ -1,0 +1,5 @@
+evidence,rate_hz,aggregation,source,comparison_scope
+current complete-parent CSI streams,40.597071,median per-source ingest rate,this bundle,same unit; different systems and conditions
+GoodCSI evaluation data,30.000000,fixed sampling rate,doi:10.1145/3636534.3697434,same unit; different hardware and application labels
+dense-deployment unbatched configuration,55.000000,approximate mean per-sensor ingest rate,doi:10.1109/RTCSA62462.2024.00027,same unit; different system and transport configuration
+dense-deployment 15-frame batch configuration,95.000000,approximate mean per-sensor ingest rate,doi:10.1109/RTCSA62462.2024.00027,same unit; different system and transport configuration

@@ -4,7 +4,7 @@ type: dataset
 title: "Same-Attempt Evidence Admission: Sanitized Three-Phase Results"
 authors:
   - name: "Sage-Cat"
-version: "1.0.0"
-date-released: "2026-09-08"
+version: "1.1.0"
+date-released: "2026-09-09"
 url: "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments"
 license: CC-BY-4.0

@@ -138,6 +138,60 @@
       "independent_three_date"
     ]
   },
+  "external_technical_comparison": {
+    "analysis_status": "post_hoc_exploratory",
+    "complete_parent_denominator": 10,
+    "goodcsi_timestamp_variation_score": {
+      "adaptation": "six non-overlapping 45-second windows per required stream; median per stream; minimum required-stream median per package",
+      "definition": "inverse coefficient of variation of CSI timestamp intervals",
+      "doi": "10.1145/3636534.3697434",
+      "full_goodcsi_pipeline_reproduced": false,
+      "operational_fail_packages": {
+        "count": 3,
+        "maximum": 1.6601493349205847,
+        "median": 1.653152662553484,
+        "minimum": 0.4452362305361227
+      },
+      "operational_pass_packages": {
+        "count": 7,
+        "maximum": 3.8204167474585717,
+        "median": 3.245599061272134,
+        "minimum": 2.5561476096329145
+      },
+      "rank_concordance": {
+        "area": 1.0,
+        "concordant_pair_equivalents": 21.0,
+        "pass_fail_pairs": 21,
+        "truth_boundary": "concordance with the retained operational disposition, not accuracy against independent external truth"
+      }
+    },
+    "per_source_ingest_rate_hz": {
+      "complete_parent_stream_observations": 30,
+      "maximum": 41.96617513568173,
+      "mean": 38.10431533149834,
+      "median": 40.597071382879165,
+      "minimum": 1.610320165577962,
+      "published_same_unit_context": [
+        {
+          "doi": "10.1145/3636534.3697434",
+          "label": "GoodCSI evaluation data",
+          "rate_hz": 30.0
+        },
+        {
+          "doi": "10.1109/RTCSA62462.2024.00027",
+          "label": "dense deployment without compression",
+          "rate_hz": 55.0
+        },
+        {
+          "doi": "10.1109/RTCSA62462.2024.00027",
+          "label": "dense deployment with 15-frame batching",
+          "rate_hz": 95.0
+        }
+      ]
+    },
+    "primary_itt_endpoint_replaced": false,
+    "technical_incomplete_units_imputed": false
+  },
   "fault_reason_coverage": {
     "fault_classes": 10,
     "reason_union_classes": 10,
