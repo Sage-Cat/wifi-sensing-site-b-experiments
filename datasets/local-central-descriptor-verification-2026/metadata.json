@@ -1,0 +1,40 @@
+{
+  "schema_version": "sagecat-public-result-bundle/1",
+  "bundle_id": "local-central-descriptor-verification-2026",
+  "title": "Local--Central CSI Descriptor Verification Results",
+  "creator": "Sage-Cat",
+  "release_year": 2026,
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "repository": "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments",
+  "public_site_alias": "site-b",
+  "method": {
+    "name": "Paired-Path Centralized-Raw / Node-Local-Feature Comparison",
+    "owner": "Sage-Cat"
+  },
+  "content_kind": "sanitized derived experiment results",
+  "scope": {
+    "environment": "one anonymized indoor site with two same-floor sensing zones",
+    "date_strata": ["S1", "S2", "S3"],
+    "confirmation_units": 12,
+    "local_central_path_pairs": 36,
+    "deterministic_fault_cases": 108,
+    "endpoint": "same-archive descriptor-path fidelity and deterministic fault qualification"
+  },
+  "privacy": {
+    "sanitization_policy": "default_deny_allowlisted_projection",
+    "deanonymization_authorized": false,
+    "contains_raw_csi": false,
+    "contains_source_captures": false,
+    "contains_private_location_identity": false,
+    "contains_direct_device_or_network_identifiers": false,
+    "contains_private_source_hashes": false
+  },
+  "files": {
+    "canonical_results": "data/results.json",
+    "stratum_summary": "data/stratum-summary.csv",
+    "gate_summary": "data/gate-summary.csv",
+    "fault_matrix": "data/fault-by-gate.csv",
+    "technical_qualification": "data/physical-qualification.csv"
+  }
+}

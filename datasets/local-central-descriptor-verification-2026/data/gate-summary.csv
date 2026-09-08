@@ -1,0 +1,6 @@
+gate,clean_self_reference_cases,clean_rejections,clean_false_rejection_rate,fault_cases,false_qualifications,false_qualification_rate
+paired_path,12,0,0.0,108,0,0.0
+checksum_only,12,0,0.0,108,0,0.0
+timestamp_only,12,0,0.0,108,36,0.3333333333333333
+serialized_vector_parity,12,0,0.0,108,60,0.5555555555555556
+no_gate,12,0,0.0,108,108,1.0

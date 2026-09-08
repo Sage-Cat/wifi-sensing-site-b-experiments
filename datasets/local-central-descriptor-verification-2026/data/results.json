@@ -1,0 +1,87 @@
+{
+  "schema_version": "sagecat-local-central-descriptor-verification-results/1",
+  "method": {
+    "name": "Paired-Path Centralized-Raw / Node-Local-Feature Comparison",
+    "owner": "Sage-Cat"
+  },
+  "campaign": {
+    "date_strata": ["S1", "S2", "S3"],
+    "units_per_stratum": [4, 4, 4],
+    "scheduled_units": 12,
+    "completed_units": 12,
+    "passing_units": 12,
+    "physical_paths_per_unit": 3,
+    "local_central_path_pairs": 36,
+    "fault_transformations_per_unit": 9,
+    "fault_cases": 108,
+    "background_activity_controlled": false,
+    "human_state_ground_truth_available": false,
+    "classification_quality_available": false
+  },
+  "path_fidelity": {
+    "descriptor_windows": 5588,
+    "ordered_feature_components": 67056,
+    "components_per_window": 12,
+    "byte_identical_pairs": 36,
+    "all_serialized_pairs_byte_identical": true,
+    "squared_error_sum": 0.0,
+    "central_reference_square_sum": 609598293.4807463,
+    "linear_nmse": 0.0,
+    "maximum_component_wise_absolute_gap": 0.0
+  },
+  "gate_results": {
+    "paired_path": {
+      "clean_self_reference_cases": 12,
+      "clean_rejections": 0,
+      "fault_cases": 108,
+      "false_qualifications": 0
+    },
+    "checksum_only": {
+      "clean_self_reference_cases": 12,
+      "clean_rejections": 0,
+      "fault_cases": 108,
+      "false_qualifications": 0
+    },
+    "timestamp_only": {
+      "clean_self_reference_cases": 12,
+      "clean_rejections": 0,
+      "fault_cases": 108,
+      "false_qualifications": 36
+    },
+    "serialized_vector_parity": {
+      "clean_self_reference_cases": 12,
+      "clean_rejections": 0,
+      "fault_cases": 108,
+      "false_qualifications": 60
+    },
+    "no_gate": {
+      "clean_self_reference_cases": 12,
+      "clean_rejections": 0,
+      "fault_cases": 108,
+      "false_qualifications": 108
+    }
+  },
+  "separate_physical_execution_qualification": {
+    "claim_eligible": false,
+    "confirmation_unit_consumed": false,
+    "physical_paths": 3,
+    "descriptor_windows": 327,
+    "input_identity_matches": 3,
+    "shape_matches": 3,
+    "serialized_byte_matches": 3,
+    "maximum_component_wise_absolute_gap": 0.0,
+    "numerical_tolerance": 1e-9,
+    "technical_path_qualified": true
+  },
+  "interpretation": {
+    "supported": "The evaluated local and central processing paths produced identical serialized descriptors, and the full rule rejected every registered deterministic fault without rejecting a clean self-reference case.",
+    "comparator_boundary": "Exact checksum-only produced the same 0-of-108 fault and 0-of-12 clean result; no advantage over checksum-only is established.",
+    "not_measured": [
+      "sensing or classification accuracy",
+      "occupancy, presence, or motion",
+      "compression or transport cost",
+      "latency, throughput, energy, or resource efficiency",
+      "cross-site or cross-device generalization"
+    ]
+  }
+}

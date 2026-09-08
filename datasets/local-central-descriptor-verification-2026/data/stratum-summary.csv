@@ -1,0 +1,4 @@
+stratum_id,confirmation_units,local_central_path_pairs,descriptor_windows,ordered_feature_components,fault_cases,paired_path_false_qualifications,checksum_only_false_qualifications,timestamp_only_false_qualifications,serialized_vector_parity_false_qualifications,no_gate_false_qualifications,clean_self_reference_cases,clean_rejections_for_each_gate
+S1,4,12,1863,22356,36,0,0,12,20,36,4,0
+S2,4,12,1860,22320,36,0,0,12,20,36,4,0
+S3,4,12,1865,22380,36,0,0,12,20,36,4,0

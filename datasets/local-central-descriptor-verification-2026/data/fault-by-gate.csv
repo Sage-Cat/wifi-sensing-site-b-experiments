@@ -1,0 +1,10 @@
+fault_type,fault_cases,paired_path_false_qualifications,checksum_only_false_qualifications,timestamp_only_false_qualifications,serialized_vector_parity_false_qualifications,no_gate_false_qualifications
+dropped_descriptor,12,0,0,0,0,12
+duplicated_descriptor,12,0,0,0,0,12
+clock_skew_250_ms,12,0,0,0,12,12
+unauthorized_timestamp_repair,12,0,0,0,12,12
+unmatched_source_identity,12,0,0,12,12,12
+stale_run_lineage,12,0,0,12,12,12
+missing_source_block,12,0,0,0,0,12
+feature_version_drift,12,0,0,12,12,12
+corrupted_json_serialization,12,0,0,0,0,12
