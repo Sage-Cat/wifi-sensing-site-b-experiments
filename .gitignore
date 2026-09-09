@@ -1,4 +1,5 @@
 # Local and reproducible derivatives
+/wt/
 **/analysis/
 **/derived/
 **/processed/
