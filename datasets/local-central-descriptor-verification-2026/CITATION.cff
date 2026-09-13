@@ -4,7 +4,7 @@ type: dataset
 title: "Local--Central CSI Descriptor Verification Results"
 authors:
   - name: "Sage-Cat"
-version: "1.0.0"
-date-released: "2026-09-08"
-url: "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments"
+version: "1.1.0"
+date-released: "2026-09-13"
+url: "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments/tree/main/datasets/local-central-descriptor-verification-2026"
 license: CC-BY-4.0

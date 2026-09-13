@@ -4,7 +4,7 @@
   "title": "Local--Central CSI Descriptor Verification Results",
   "creator": "Sage-Cat",
   "release_year": 2026,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "CC-BY-4.0",
   "repository": "https://github.com/Sage-Cat/wifi-sensing-site-b-experiments",
   "public_site_alias": "site-b",
@@ -15,7 +15,11 @@
   "content_kind": "sanitized derived experiment results",
   "scope": {
     "environment": "one anonymized indoor site with two same-floor sensing zones",
-    "date_strata": ["S1", "S2", "S3"],
+    "date_strata": [
+      "S1",
+      "S2",
+      "S3"
+    ],
     "confirmation_units": 12,
     "local_central_path_pairs": 36,
     "deterministic_fault_cases": 108,
@@ -35,6 +39,17 @@
     "stratum_summary": "data/stratum-summary.csv",
     "gate_summary": "data/gate-summary.csv",
     "fault_matrix": "data/fault-by-gate.csv",
-    "technical_qualification": "data/physical-qualification.csv"
+    "technical_qualification": "data/physical-qualification.csv",
+    "input_reuse": "data/input-reuse.csv"
+  },
+  "input_provenance": {
+    "verification_units": 12,
+    "shared_capture_sets": 8,
+    "dedicated_capture_sets": 4,
+    "source_dataset": "same-attempt-evidence-admission-2026",
+    "source_rows": "../same-attempt-evidence-admission-2026/data/operational-unit-outcomes.csv",
+    "public_mapping": "data/input-reuse.csv",
+    "raw_capture_sets_published": false,
+    "cross_dataset_independent_replications": false
   }
 }

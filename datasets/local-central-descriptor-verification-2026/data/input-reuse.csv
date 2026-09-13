@@ -1,0 +1,13 @@
+verification_unit_id,verification_stratum,input_origin,source_dataset,source_phase,source_public_unit_id
+V01,S1,shared_capture,same-attempt-evidence-admission-2026,single_date_operational,single-01
+V02,S1,shared_capture,same-attempt-evidence-admission-2026,single_date_operational,single-02
+V03,S1,shared_capture,same-attempt-evidence-admission-2026,single_date_operational,single-03
+V04,S1,shared_capture,same-attempt-evidence-admission-2026,single_date_operational,single-04
+V05,S2,dedicated_capture,,,
+V06,S2,dedicated_capture,,,
+V07,S2,dedicated_capture,,,
+V08,S2,dedicated_capture,,,
+V09,S3,shared_capture,same-attempt-evidence-admission-2026,independent_three_date,three-01
+V10,S3,shared_capture,same-attempt-evidence-admission-2026,independent_three_date,three-02
+V11,S3,shared_capture,same-attempt-evidence-admission-2026,independent_three_date,three-03
+V12,S3,shared_capture,same-attempt-evidence-admission-2026,independent_three_date,three-04
