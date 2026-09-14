@@ -20,7 +20,7 @@ identity, and it was not a cross-floor experiment.
 Twelve scheduled blocks were consumed: one complete primary-per-protocol block,
 one complete deviation-aware block, and ten incomplete blocks. The primary
 complete-block yield was 1/12 (8.3%; Wilson 95% CI 1.49%--35.39%); the analyzable
-yield was 2/12 (16.7%; 4.70%--44.80%). There were 63/180 completed service
+yield was 2/12 (16.7%; 4.70%--44.80%). There were 75/180 completed service
 trials, of which 30 belonged to the two analyzable blocks and 15 to the primary
 block. Incomplete blocks remain in the denominator; partial trials are
 diagnostic and are not treated as independent replications.

@@ -1,5 +1,5 @@
 block_id,completed_service_trials,disposition,analysis_role,technical_failure_category
-B01,0,incomplete_consumed,not_analyzable,acquisition_or_collector_lifecycle
+B01,12,incomplete_consumed,not_analyzable,acquisition_or_collector_lifecycle
 B02,0,incomplete_consumed,not_analyzable,acquisition_or_collector_lifecycle
 B03,15,completed,deviation_aware,
 B04,0,incomplete_consumed,not_analyzable,acquisition_or_collector_lifecycle
